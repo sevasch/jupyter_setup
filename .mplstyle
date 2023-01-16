@@ -1,0 +1,76 @@
+# MATPLOTLIB STYLESHEET (Created by Sebastian Schmid)
+#
+# This file defines the style of plots created with matplotlib. It is 
+# tailered towards LaTeX documents and jupyter notebooks that are later
+# exported to PDF documents. The text sizes, the height and width are 
+# adjusted for a LaTeX document with text size 10 and A4 format. 
+#
+# To use this in a python script, add the following line before creating 
+# any plots: 
+# plt.style.use('.mplstyle')
+#
+# To adjust the figure height of a plot, use this code snippet: 
+# plt.rcParams['figure.figsize'][1] = newvalue
+
+### Axes
+axes.titlesize: 10
+axes.labelsize: 10
+axes.grid: True
+
+### Lines
+lines.linewidth: 1.0
+lines.markersize: 6
+
+### Ticks
+xtick.top: True
+xtick.bottom: True
+xtick.major.size: 4.0
+xtick.minor.size: 2.0
+xtick.major.width: 0.5
+xtick.minor.width: 0.5
+xtick.direction: in
+xtick.minor.visible: True
+xtick.major.top: True
+xtick.major.bottom: True
+xtick.minor.top: True
+xtick.minor.bottom: True
+xtick.major.pad: 5.0
+xtick.minor.pad: 5.0
+ytick.labelsize: 10
+
+ytick.left: True
+ytick.right: True
+ytick.major.size: 4.0
+ytick.minor.size: 2.0
+ytick.major.width: 0.5
+ytick.minor.width: 0.5
+ytick.direction: in
+ytick.minor.visible: True
+ytick.major.left: True
+ytick.major.right: True
+ytick.minor.left: True
+ytick.minor.right: True
+ytick.major.pad: 5.0
+ytick.minor.pad: 5.0
+xtick.labelsize: 10
+
+### Legend
+#legend.frameon: False
+legend.fontsize: 10
+legend.framealpha: 0.8
+
+### Figure size
+figure.figsize: 5.48053, 3.0 # width was extracted from LaTeX
+figure.autolayout: False # automatically do fig.tight_layout()
+figure.subplot.wspace: 0.05 # whitespace between subplots 
+figure.subplot.hspace: 0.05 # whitespace between subplots 
+figure.dpi: 150
+
+### Fonts
+pgf.texsystem: pdflatex
+font.family: serif
+text.usetex: True
+
+### Saving figures
+path.simplify: True
+savefig.dpi: 400
